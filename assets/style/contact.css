@@ -9,8 +9,7 @@
 }
 body {
     font-family: 'Script';
-    background-color: rgb(6, 6, 116);
-    color:  rgb(255, 255, 91);
+    background-color: rgb(72, 0, 121);
     height: 98vh;
 }
 header {
@@ -27,14 +26,14 @@ nav {
 a {
     text-decoration: none;
     background-color: rgb(255, 255, 91);
-    color: rgb(6, 6, 116);
+    color:rgb(72, 0, 121);
     border-radius: 20px;
     padding: 10px;
 }
 a:hover {
     transition: all 0.1s;
     transform: scale(1.125);
-    background: rgb(255, 55, 55);
+    background: rgb(72, 0, 121);
     color:  rgb(255, 255, 91);
     cursor: pointer;
     border: 1px solid rgb(255, 255, 91);
@@ -45,12 +44,35 @@ main {
     justify-content: center;
     align-items: center;
 }
-#logo {
-    height: 100%;
-    width: 100%;
+
+.pacman {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f2d648;
+    position: relative;
+    margin-top: 20px;
 }
+.pacman_eye {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 20px;
+    right: 40px;
+    background-color: rgb(72, 0, 121);
+}
+.pacman_mouth {
+    background-color: rgb(72, 0, 121);
+    position: absolute;
+    width: 105%;
+    height: 100%;
+    clip-path: polygon(100% 74%, 48% 50%, 100% 25%);
+}
+
+
 footer {
     height: 5%;
     text-align: center;
-    color:  rgb(255, 255, 91);
+    color: white;
 }
