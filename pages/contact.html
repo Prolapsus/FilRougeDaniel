@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/style/general.css">
+  <link rel="stylesheet" href="../assets/style/choix.css">
+  <title>Contact</title>
+</head>
+<body>
+  <a href="../index.html">Accueil</a>
+  <h1>Contact</h1>
+  <form action="#">
+    <!-- (label+br+input+br)*2 -->
+    <label for="name">Nom</label><br>
+    <input type="text" id="name"><br> <br>
+    <label for="prenom">Prénom</label><br>
+    <input type="text" id="prenom"><br> <br>
+    <!-- label+br+input:date+br -->
+    <label for="ddn">Date de naissance</label><br>
+    <input type="date" name="ddn" id="ddn"><br> <br>
+    <fieldset>
+      <legend>Sexe</legend>
+      <!-- (input:radio+label+br)*2 -->
+      <input type="radio" name="sexe" id="femme" value="femme"><label for="femme">femme</label><br>
+      <input type="radio" name="sexe" id="homme" value="homme"><label for="homme">homme</label><br>
+    </fieldset> <br>
+    <!-- label+br+select -->
+    <label for="Bière">Bière</label><br>
+    <select name="Bière" id="Bière">
+      <!-- option*4 -->
+      <option value="">Veuillez choisir UNE bière</option>
+      <option value="Kwack">Kwack</option>
+      <option value="Triple">Triple Karmeliet</option>
+      <option value="Guinness">Guinness</option>
+      <option value="Spécial">Lave-Glace</option>
+    </select> <br><br>
+    <!-- label+br+textarea+br+br -->
+    <label for="Message">Message</label><br>
+    <textarea name="Message" id="Message" cols="30" rows="10">
+      sdfljbsldkfbjlk
+    </textarea><br><br>
+    <!-- input:submit -->
+    <input type="submit" value="Envoyer">
+  </form>
+</body>
+</html>
