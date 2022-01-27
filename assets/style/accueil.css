@@ -37,29 +37,39 @@ a {
 }
 a:hover {
     transition: all 0.1s;
-    transform: scale(1.15);
-    background:  #9c1805;
+    transform: scale(1.25);
+    background: rgb(116, 6, 6);
     color:#FEF202;
     cursor: pointer;
     border: 1px solid #FEF202;
 }
-h1 {
+.titres {
     font-family: 'Dancing';
     text-align: center;
-    height: 2em;
+}
+.titres :last-child {
+    color: rgb(6, 6, 116);
+}
+.titres :last-child:hover {
+    color: #FEF202;
+    transition: all ease-in-out 5s;
+}
+main {
+    height: 85%;
 }
 section {
-    height: 60vh;
+    height: 100%;
     display : flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
 #logo {
-    height: 200px;
-    width: 200px;
+    height: 50%;
+    width: 50%;
 }
 footer {
+    font-family: 'Script';
     position: fixed;
     bottom: 0px;
     height: 5%;
@@ -74,7 +84,7 @@ footer {
 }
 .banniere {
 	line-height: 5%;
-    font-weight: 600;
+    font-weight: lighter;
 	padding: 4px;
     color:#FEF202;
 	white-space: nowrap;

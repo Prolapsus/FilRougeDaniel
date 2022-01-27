@@ -9,7 +9,7 @@
 }
 body {
     font-family: 'Script';
-    background-color: rgb(72, 0, 121);
+    background-color: black;
     height: 98vh;
 }
 header {
@@ -26,14 +26,14 @@ nav {
 a {
     text-decoration: none;
     background-color: rgb(255, 255, 91);
-    color:rgb(72, 0, 121);
+    color:black;
     border-radius: 20px;
     padding: 10px;
 }
 a:hover {
     transition: all 0.1s;
-    transform: scale(1.125);
-    background: rgb(72, 0, 121);
+    transform: scale(1.25);
+    background: black;
     color:  rgb(255, 255, 91);
     cursor: pointer;
     border: 1px solid rgb(255, 255, 91);
@@ -61,10 +61,10 @@ main {
     border-radius: 50%;
     top: 20px;
     right: 40px;
-    background-color: rgb(72, 0, 121);
+    background-color: black;
 }
 .pacman_mouth {
-    background-color: rgb(72, 0, 121);
+    background-color: black;
     position: absolute;
     width: 105%;
     height: 100%;
