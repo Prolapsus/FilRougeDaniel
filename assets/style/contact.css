@@ -38,6 +38,7 @@ a:hover {
     cursor: pointer;
     border: 1px solid rgb(255, 255, 91);
 }
+
 main {
     height: 85%;
     display : flex;
@@ -69,7 +70,6 @@ main {
     height: 100%;
     clip-path: polygon(100% 74%, 48% 50%, 100% 25%);
 }
-
 
 footer {
     height: 5%;

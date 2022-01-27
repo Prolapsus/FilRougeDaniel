@@ -9,7 +9,7 @@
 }
 body {
     font-family: 'Script';
-    background-color: rgb(116, 6, 6);
+    background-color:rgb(116, 6, 6);
     color: rgb(6, 6, 116);
     height: 98vh;
 }
@@ -45,10 +45,8 @@ main {
     justify-content: center;
     align-items: center;
 }
-#logo {
-    height: 100%;
-    width: 100%;
-}
+
+
 footer {
     height: 5%;
     text-align: center;

@@ -2,6 +2,10 @@
     src:url('../font/script1-script-casual-normal.ttf');
     font-family:'Script';
 }
+@font-face {
+    src:url('../font/DancingScript-Regular.otf');
+    font-family:'Dancing';
+}
 * {
     margin: 0;
     padding: 0;
@@ -10,8 +14,8 @@
 body {
     font-family: 'Script';
     background-color: rgb(6, 6, 116);
-    color:  rgb(255, 255, 91);
-    height: 98vh;
+    color:#FEF202;
+    height: 100vh;
 }
 header {
     height: 10%;
@@ -26,7 +30,7 @@ nav {
 }
 a {
     text-decoration: none;
-    background-color: rgb(255, 255, 91);
+    background-color:#FEF202;
     color: rgb(6, 6, 116);
     border-radius: 20px;
     padding: 10px;
@@ -34,10 +38,14 @@ a {
 a:hover {
     transition: all 0.1s;
     transform: scale(1.125);
-    background: rgb(255, 55, 55);
-    color:  rgb(255, 255, 91);
+    background:  #9c1805;
+    color:#FEF202;
     cursor: pointer;
-    border: 1px solid rgb(255, 255, 91);
+    border: 1px solid #FEF202;
+}
+h1 {
+    font-family: 'Dancing';
+    text-align: center;
 }
 main {
     height: 85%;
@@ -50,7 +58,34 @@ main {
     width: 100%;
 }
 footer {
+    position: fixed;
+    bottom: 0px;
     height: 5%;
-    text-align: center;
-    color:  rgb(255, 255, 91);
+    color:#FEF202;
+}
+.banniere-container {
+	background-color: #9c1805;
+    height: 100%;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+.banniere {
+	line-height: 5%;
+    font-weight: 600;
+	padding: 4px;
+    color:#FEF202;
+	white-space: nowrap;
+	animation: mouvement 30s infinite linear;
+}
+.banniere:after {
+	content: "---- (+33) 980-980-930 ---- CALL PAUL NOW! ---- (+33) 980-980-930 ---- CALL PAUL NOW! ---- (+33) 980-980-930 ---- CALL PAUL NOW! ---- (+33) 980-980-930 ---- CALL PAUL NOW!";
+}
+@keyframes mouvement {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
 }
