@@ -15,38 +15,32 @@
     </nav>
   </header>
   <main>
+    <div class="titres">
+      <h2>Let's meet</h2>
+      <h3>When I'm available :p</h3>
+    </div>
     <form action="#">
-      <!-- (label+br+input+br)*2 -->
-      <label for="name">Nom</label><br>
-      <input type="text" id="name"><br> <br>
-      <label for="prenom">Prénom</label><br>
-      <input type="text" id="prenom"><br> <br>
-      <!-- label+br+input:date+br -->
-      <label for="ddn">Date de naissance</label><br>
-      <input type="date" name="ddn" id="ddn"><br> <br>
-      <fieldset>
-        <legend>Sexe</legend>
-        <!-- (input:radio+label+br)*2 -->
-        <input type="radio" name="sexe" id="femme" value="femme"><label for="femme">femme</label><br>
-        <input type="radio" name="sexe" id="homme" value="homme"><label for="homme">homme</label><br>
-      </fieldset> <br>
-      <!-- label+br+select -->
-      <label for="Bière">Bière</label><br>
-      <select name="Bière" id="Bière">
-        <!-- option*4 -->
-        <option value="">Make Your Choice</option>
-        <option value="Kwack">Kwack</option>
-        <option value="Triple">Triple Karmeliet</option>
-        <option value="Guinness">Guinness</option>
-        <option value="Spécial">Lave-Glace</option>
+      <label for="prenom">First Name</label><br>
+      <input type="text" id="prenom"><br><br>
+      <label for="date">Date</label><br>
+      <input type="date" name="date" id="date"><br><br>
+      <label for="Gender">Gender</label><br>
+      <input type="radio" name="sexe" id="femme" value="femme">
+      <label for="femme">Female</label>
+      <input type="radio" name="sexe" id="homme" value="homme">
+      <label for="homme">Male</label><br><br>
+      <label for="Bar">Bar</label><br>
+      <select name="Bar" id="Bar">
+        <option value="Vivian">Vivian's Fairy Pub</option>
+        <option value="3.96">3.96</option>
+        <option value="Brooklin">Brooklin</option>
+        <option value="Pearl">Pearl</option>
+        <option value="Schamrock">Shamrock Pub</option>
       </select> <br><br>
-      <!-- label+br+textarea+br+br -->
-      <label for="Message">Message</label><br>
-      <textarea name="Message" id="Message" cols="30" rows="10">
-        sdfljbsldkfbjlk
+      <label for="Message">Your Message</label><br>
+      <textarea name="Message" id="Message" placeholder="Type your message here" cols="30" rows="10">
       </textarea><br><br>
-      <!-- input:submit -->
-      <input type="submit" value="Envoyer">
+      <input type="submit" value="Send" id="bouton">
     </form>
     <div class="pacman">
       <div class="pacman_eye">

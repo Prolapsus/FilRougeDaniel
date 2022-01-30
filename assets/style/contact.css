@@ -2,6 +2,10 @@
     src:url('../font/script1-script-casual-normal.ttf');
     font-family:'Script';
 }
+@font-face {
+    src:url('../font/DancingScript-Regular.otf');
+    font-family:'Dancing';
+}
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +29,7 @@ nav {
 }
 a {
     text-decoration: none;
-    background-color: rgb(255, 255, 91);
+    background-color: #FEF202;
     color:black;
     border-radius: 20px;
     padding: 10px;
@@ -34,25 +38,44 @@ a:hover {
     transition: all 0.1s;
     transform: scale(1.25);
     background: black;
-    color:  rgb(255, 255, 91);
+    color: #FEF202;
     cursor: pointer;
-    border: 1px solid rgb(255, 255, 91);
+    border: 1px solid #FEF202;
 }
-
 main {
-    height: 85%;
     display : flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+}
+.titres {
+    font-family: 'Dancing';
+    text-align: center;
+    color: #FEF202;
+}
+.titres :last-child {
+    margin: 10px;
+    animation: appear 20s linear 1;
+}
+form {
+    color: white;
+    border: 1px solid white;
+    padding : 20px;
+}
+textarea {
+    resize: none;
+}
+input:last-of-type {
+    background-color: darkred;
 }
 
 .pacman {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #f2d648;
+    background-color: #FEF202;
     position: relative;
-    margin-top: 20px;
+    margin: 20px;
 }
 .pacman_eye {
     position: absolute;
@@ -69,10 +92,44 @@ main {
     width: 105%;
     height: 100%;
     clip-path: polygon(100% 74%, 48% 50%, 100% 25%);
+    animation: eat 3s ease-in-out 5s infinite;
 }
 
 footer {
     height: 5%;
+    width: 100%;
     text-align: center;
     color: white;
+}
+
+@keyframes appear {
+    From {  
+        color: black;
+    }
+    To {
+        color: #FEF202;
+    }
+}
+@keyframes eat {
+    0% {
+        clip-path: polygon(100% 25%, 48% 50%, 100% 74%);
+    }
+    25% {
+        clip-path: polygon(100% 49%, 48% 50%, 100% 51%);
+    }
+    37% {
+        clip-path: polygon(100% 45%, 48% 50%, 100% 55%);
+    }
+    50% {
+        clip-path: polygon(100% 49%, 48% 50%, 100% 51%);
+    }
+    67% {
+        clip-path: polygon(100% 45%, 48% 50%, 100% 55%);
+    }
+    75% {
+        clip-path: polygon(100% 49%, 48% 50%, 100% 51%);
+    }
+    100% {
+        clip-path: polygon(100% 25%, 48% 50%, 100% 74%);
+    }
 }
