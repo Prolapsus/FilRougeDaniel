@@ -57,10 +57,14 @@ main {
     margin: 10px;
     animation: appear 20s linear 1;
 }
+
 form {
     color: white;
     border: 1px solid white;
     padding : 20px;
+}
+label:nth-of-type(4) {
+    margin-right: 30px;
 }
 textarea {
     resize: none;

@@ -66,8 +66,6 @@ section {
 }
 footer {
     font-family: 'Script';
-    position: fixed;
-    bottom: 0px;
     height: 5%;
     color:#FEF202;
 }
