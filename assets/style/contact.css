@@ -14,39 +14,33 @@
 body {
     font-family: 'Script';
     background-color: black;
-    height: 98vh;
 }
 header {
     height: 10%;
     width: 100%;
 }
 nav {
+    margin: 10px;
     height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
-a {
+nav a {
     text-decoration: none;
     background-color: #FEF202;
     color:black;
     border-radius: 20px;
     padding: 10px;
 }
-a:hover {
+nav a:hover {
     transition: all 0.1s;
     transform: scale(1.25);
     background: black;
     color: #FEF202;
     cursor: pointer;
     border: 1px solid #FEF202;
-}
-main {
-    display : flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
 }
 .titres {
     font-family: 'Dancing';
@@ -57,28 +51,37 @@ main {
     margin: 10px;
     animation: appear 20s linear 1;
 }
-
+section:nth-of-type(2) {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.aside {
+    display: none;
+}
 form {
     color: white;
     border: 1px solid white;
     padding : 20px;
 }
-label:nth-of-type(4) {
+label:nth-of-type(5) {
     margin-right: 30px;
 }
 textarea {
     resize: none;
 }
 input:last-of-type {
-    background-color: darkred;
+    width: 30%;
+    margin-left: 35%;
 }
 
 .pacman {
+    position: relative;
     width: 100px;
     height: 100px;
     border-radius: 50%;
     background-color: #FEF202;
-    position: relative;
     margin: 20px;
 }
 .pacman_eye {
@@ -99,11 +102,18 @@ input:last-of-type {
     animation: eat 3s ease-in-out 5s infinite;
 }
 
+.icones {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
 footer {
     height: 5%;
     width: 100%;
     text-align: center;
     color: white;
+    margin: 10px;
 }
 
 @keyframes appear {
@@ -136,4 +146,18 @@ footer {
     100% {
         clip-path: polygon(100% 25%, 48% 50%, 100% 74%);
     }
+}
+
+@media screen and (min-width: 941px) {
+    .aside {
+        display: flex;
+        justify-content: center;
+    }
+    .aside:first-of-type img {
+        transform: rotateY(180deg) translateY(-70px) translateX(10px);
+    }
+    .aside:first-of-type .pacman {
+        transform: rotateZ(-60deg) translateY(60px) translateX(10px);
+    }
+
 }

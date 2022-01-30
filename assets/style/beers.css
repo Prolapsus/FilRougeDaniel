@@ -75,12 +75,13 @@ main {
     height: 10%;
     margin: 20px;
 	display: flex;
+    position: relative;
 	justify-content: space-around;
 	align-items: center;
-	position: relative;
     border-radius: 15px;
     background-color: white;
 }
+
 .box:after {
 	position: absolute;
 	top:0;
@@ -97,23 +98,24 @@ main {
 	opacity: 0.4;
 }
 .box p {
-	color: #7f2929;
-	transition: all 0.15s ease 0s; 
-	position: relative;
+	color: rgb(116, 6, 6);
 	z-index: 1;
 }
 .box img {
     z-index: 1;
+    width: 22%;
 }
-/* .box:hover img{
-	transform: translateY(50px);
-} */
+.box:hover img {
+	transform: rotateZ(30deg);
+    transition: all 0.5s ease-in-out 0.2s;
+}
 
 footer {
     height: 5%;
     color: #FEF202;
     font-weight: lighter;
     text-align: center;
+    margin: 10px;
 }
 
 @keyframes appear {
