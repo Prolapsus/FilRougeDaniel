@@ -1,0 +1,17 @@
+@font-face {
+    src:url('../font/script1-script-casual-normal.ttf');
+    font-family:'Script';
+}
+@font-face {
+    src:url('../font/DancingScript-Regular.otf');
+    font-family:'Dancing';
+}
+@font-face {
+    src: url(../font/Roboto-Regular.ttf);
+    font-family: 'Roboto';
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

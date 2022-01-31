@@ -1,16 +1,4 @@
-@font-face {
-    src:url('../font/script1-script-casual-normal.ttf');
-    font-family:'Script';
-}
-@font-face {
-    src:url('../font/DancingScript-Regular.otf');
-    font-family:'Dancing';
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 body {
     font-family: 'Script';
     background-color: rgb(6, 6, 116);
@@ -40,7 +28,6 @@ a:hover {
     transform: scale(1.25);
     background: rgb(116, 6, 6);
     color:#FEF202;
-    cursor: pointer;
     border: 1px solid #FEF202;
 }
 .titres {
