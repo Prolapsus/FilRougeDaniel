@@ -79,7 +79,7 @@ footer {
 	animation: scrolling 30s infinite linear;
 }
 .banniere:after {
-	content: "---- (+33) 980-980-930 ---- CALL PAUL NOW! ---- (+33) 980-980-930 ---- CALL PAUL NOW! ---- (+33) 980-980-930 ---- CALL PAUL NOW! ---- (+33) 980-980-930 ---- CALL PAUL NOW!";
+	content: "---- 980-980-930 ---- CALL PAUL NOW! ---- 980-980-930 ---- CALL PAUL NOW! ---- 980-980-930 ---- CALL PAUL NOW! ---- 980-980-930 ---- CALL PAUL NOW!";
 }
 @keyframes scrolling {
 	0% {
